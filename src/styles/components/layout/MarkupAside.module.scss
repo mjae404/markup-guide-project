@@ -1,0 +1,70 @@
+@import '../../common/variable';
+@import '../../common/mixin';
+
+.mu-aside {
+  width: $sideMenuWidth;
+  min-height: calc(100vh - 155px);
+  border-right: 1px solid $gray5;
+  margin-right: $sideMenuMargin;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  &-nav {
+    padding: 50px 0;
+    box-sizing: border-box;
+
+    &-item:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    &-link {
+      display: inline-block;
+      padding: 4px 20px 4px 10px;
+      position: relative;
+      color: #000;
+      transition: margin .2s;
+
+      &.active {
+        color: $point3;
+
+        &::before {
+          background-color: $point3;
+        }
+
+        &::after {
+          position: absolute;
+          left: 10px;
+          bottom: 2px;
+          width: calc(100% - 30px);
+          height: 1px;
+          background-color: $point3;
+          z-index: -1;
+          content: '';          
+        }
+      }
+
+      &::before {
+        position: absolute;
+        top: 13px;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        display: block;
+        background-color: #000;
+        content: '';
+      }
+
+      &:hover {
+        margin-left: 10px;
+        color: $point3;
+
+        &::before {
+          background-color: $point3;
+        }
+      }
+    }
+  }
+}

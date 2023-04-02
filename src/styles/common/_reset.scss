@@ -1,0 +1,52 @@
+@import './variable';
+@import './mixin';
+
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  letter-spacing: -.4px;
+  font-family: Inter, Noto Sans KR, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $point3;
+
+  &:hover {
+    color: $point5;
+  }
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+textarea,
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+blockquote {
+  margin: 0;
+}

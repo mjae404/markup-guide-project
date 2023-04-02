@@ -1,0 +1,43 @@
+@import '../../common/variable';
+@import '../../common/mixin';
+
+.mu-space-left {
+  margin-left: 10px;
+}
+
+.mu-blockquote {
+  font-style: italic;
+  font-family: 'Lora', 'Noto Serif KR', serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.mu-item-text {
+    margin-left: 12px;
+    padding-left: 12px;
+    display: inline;
+    position: relative;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: $gray4;
+    content: '';
+  }
+}
+
+.mu-list-style {
+  margin-top: 20px;
+}
+
+.mu-separate-section {
+  &:not(:last-of-type) {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed $gray3;
+  }
+}

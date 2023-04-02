@@ -1,0 +1,58 @@
+@import './variable';
+@import './mixin';
+
+::-moz-selection {
+  color: #fff;
+  background: #000;
+}
+
+::selection {
+  color: #fff;
+  background: #000;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.mu-page-title {
+  margin-bottom: 20px;
+}
+
+.mu-align-center {
+  text-align: center;
+}
+
+.mu-code-label {
+  font-style: normal;
+  font-size: 14px;
+  font-family: 'Source Code Pro', 'Noto Sans KR', monospace;
+  color: $gray2;
+  border-radius: 2px;
+  border: 1px dashed $gray2;
+  padding: 0 5px;
+  margin: 1px 3px;
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #f7f7f7;
+}
+
+.mu-link {
+  border-bottom: 1px dashed $point3;
+  color:$point3;
+  transition: all .2s;
+
+  &:hover {
+    color: $point5;
+    border-color: $point5;
+  }
+}
+
+.mu-cite {
+  font-family: 'Lora', 'Noto Serif KR', serif;
+}

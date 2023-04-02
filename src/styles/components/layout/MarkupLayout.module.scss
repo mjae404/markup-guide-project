@@ -1,0 +1,26 @@
+@import '../../common/variable';
+@import '../../common/mixin';
+
+.mu-main {
+  max-width: 1240px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: calc(100vh - 154px);
+  margin: 0 auto;
+  display: flex;
+
+  &-inner {
+    flex: 1;
+    padding: 50px 0;
+    box-sizing: border-box;
+
+    @at-root aside + & {
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        max-width: calc(100% - $sideMenuWidth - $sideMenuMargin);
+      }
+    }
+  }
+}

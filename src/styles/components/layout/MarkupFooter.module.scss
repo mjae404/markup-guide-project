@@ -1,0 +1,20 @@
+@import '../../common/variable';
+@import '../../common/mixin';
+
+.mu-footer {
+  padding: 20px 0;
+  box-sizing: border-box;
+  border-top: 1px solid $gray5;
+
+  &-inner {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &-text {
+    color: $gray2;
+    font-size: 14px;
+  }
+}
