@@ -1,0 +1,39 @@
+@import "common";
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  &-wrap {
+    &.border {
+      border-top: 1px solid #333;
+    }
+  }
+
+  &-th {
+    padding: 10px;
+    background-color: $point2;
+
+    &:not(:first-child) {
+      border-left: 1px solid $point1;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid $point1;
+    }
+  }
+
+  &-td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid $gray6;
+
+    &:not(:first-child) {
+      border-left: 1px solid $gray6;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid $gray6;
+    }
+  }
+}

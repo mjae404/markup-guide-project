@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  letter-spacing: -.4px;
+  font-family: Inter, Noto Sans KR, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  font: {
+    family: inherit;
+    weight: inherit;
+    size: inherit;
+  }
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+textarea,
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+blockquote {
+  margin: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+dl,
+dd {
+  margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,87 @@
+@import "common";
+
+.tooltip {
+  &-wrap {
+    position: relative;
+    display: inline-block;
+  }
+
+  &-label {
+    display: inline-block;
+    padding: 5px 0;
+    line-height: 1.5;
+
+    &:hover ~ .tooltip-text {
+      display: block;
+    }
+  }
+
+  &-text {
+    line-height: 1.5;
+    position: absolute;
+    display: none;
+    width: 250px;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    color: #fff;
+
+    &::after {
+      display: block;
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-width: 1px 1px 0 0;
+      border-style: solid;
+      border-color: #000;
+      background-color: #000;
+      content: '';
+    }
+
+    @at-root .top & {
+      bottom: calc(100% + 10px);
+      left: 0;
+
+      &::after {
+        left: 1rem;
+        bottom: -3px;
+        transform: rotate(135deg);
+      }
+    }
+
+    @at-root .right & {
+      left: calc(100% + 10px);
+      top: 50%;
+      transform: translateY(-50%);
+
+      &::after {
+        left: -2px;
+        top: 50%;
+        transform: translateY(-50%) rotate(135deg);
+      }
+    }
+
+    @at-root .bottom & {
+      top: calc(100% + 2px);
+      left: 0;
+
+      &::after {
+        top: -3px;
+        left: 1rem;
+        transform: rotate(135deg);
+      }
+    }
+
+    @at-root .left & {
+      right: calc(100% + 10px);
+      top: 0;
+
+      &::after {
+        right: -2px;
+        top: 50%;
+        transform: translateY(-50%) rotate(135deg);
+      }
+    }
+  }
+}

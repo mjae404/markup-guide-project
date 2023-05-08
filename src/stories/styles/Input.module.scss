@@ -1,0 +1,87 @@
+@import "common";
+
+.input {
+  border-radius: 5px;
+  border: 2px solid $point1;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: 'Pretendard-Regular';
+
+  &.icon {
+    padding-right: 45px;
+  }
+
+  @at-root .small & {
+    padding: 7px;
+    font-size: 14px;
+  }
+
+  @at-root .large & {
+    padding: 12px;
+    font-size: 20px;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px $point2;
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:disabled,
+  &:read-only {
+    background-color: $point3;
+  }
+
+  &-container {
+    display: block;
+    width: 100%;
+  }
+
+  &-wrap {
+    position: relative;
+  }
+
+  &-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &-required {
+    &-point {
+      color: #ff3a28;
+      margin-left: 5px;
+    }
+  }
+
+  &-button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    @include position (absolute, 50%, 15px);
+    transform: translateY(-50%);
+
+    &.search {
+      background: url('../assets/icon/icon-search.svg') no-repeat center center / contain;
+    }
+  }
+
+  &-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000;
+
+    &.success {
+      color: #66bf3c;
+    }
+
+    &.fail {
+      color: #ff3a28;
+    }
+  }
+}

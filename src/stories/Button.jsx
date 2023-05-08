@@ -1,50 +1,46 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './button.css';
+import styles from './styles/Button.module.scss';
 
-/**
- * Primary UI component for user interaction
- */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-  return (
-    <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={backgroundColor && { backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
-  );
+export const Button = ({ id, label, primary, type, disabled, readonly, size, block, icon, iconPosition, ...props }) => {
+    return (
+        <button
+            type={type}
+            className={`${styles['button']}
+                ${size !== 'medium' ? styles[size] : ''}
+                ${primary ? styles['primary'] : ''}
+                ${block ? styles['block'] : ''}
+                ${icon ? styles['icon'] : ''}
+                ${icon ? styles[icon] : ''}
+                ${iconPosition ? styles[iconPosition] : ''}
+            `}
+            disabled={disabled}
+            {...props}
+        >
+            {label}
+        </button>
+    );
 };
 
 Button.propTypes = {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary: PropTypes.bool,
-  /**
-   * What background color to use
-   */
-  backgroundColor: PropTypes.string,
-  /**
-   * How large should the button be?
-   */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-  /**
-   * Button contents
-   */
-  label: PropTypes.string.isRequired,
-  /**
-   * Optional click handler
-   */
-  onClick: PropTypes.func,
+    type: PropTypes.oneOf(['button', 'submit', 'reset']).isRequired,
+    primary: PropTypes.bool,
+    block: PropTypes.bool,
+    disabled: PropTypes.bool,
+    size: PropTypes.oneOf(['small', 'medium', 'large']),
+    label: PropTypes.string.isRequired,
+    icon: PropTypes.oneOf(['null', 'write', 'upload', 'download', 'send', 'required']),
+    iconPosition: PropTypes.oneOf(['null', 'left', 'right']),
+    onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
-  backgroundColor: null,
-  primary: false,
-  size: 'medium',
-  onClick: undefined,
+    type: 'button',
+    primary: false,
+    block: false,
+    size: 'medium',
+    label: '버튼',
+    icon: 'null',
+    iconPosition: 'null',
+    onClick: undefined,
 };

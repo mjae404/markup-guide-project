@@ -1,0 +1,82 @@
+@import "common";
+
+.select {
+  flex: 1;
+  padding: 10px 45px 10px 10px;
+  border: 2px solid $point1;
+  border-radius: 5px;
+  appearance: none;
+  background-color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  width: 100%;
+  @include ellipsis;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px $point2;
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $point3;
+    color: $gray4;
+  }
+
+  @at-root .small & {
+    padding: 7px;
+    font-size: 14px;
+  }
+
+  @at-root .large & {
+    padding: 14px;
+    font-size: 18px;
+  }
+
+  &-wrap {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background: url("../assets/icon/icon-arrow-down.svg") no-repeat center center / contain;
+      display: block;
+      width: 15px;
+      height: 15px;
+      content: '';
+    }
+
+    &.disabled {
+      .select-label {
+        opacity: .3;
+      }
+
+      &::after {
+        opacity: .3;
+      }
+    }
+  }
+
+  &-label {
+    margin-right: 10px;
+    font-weight: bold;
+
+    @at-root .small & {
+      font-size: 14px;
+    }
+
+    @at-root .large & {
+      font-size: 18px;
+    }
+  }
+}

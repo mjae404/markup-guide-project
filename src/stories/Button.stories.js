@@ -1,39 +1,171 @@
 import { Button } from './Button';
 
-// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 export default {
-  title: 'Example/Button',
-  component: Button,
-  tags: ['autodocs'],
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+    title: 'Component/Button',
+    component: Button,
+    tags: ['autodocs'],
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
+export const Basic = {
+    args: {
+        type: 'button',
+        disabled: false,
+        primary: false,
+        block: false,
+        size: 'medium',
+        label: 'Basic',
+    },
+};
+
+export const small = {
+    args: {
+        type: 'button',
+        disabled: false,
+        primary: false,
+        block: false,
+        size: 'small',
+        label: 'small',
+    },
+};
+
+export const large = {
+    args: {
+        type: 'button',
+        disabled: false,
+        primary: false,
+        block: false,
+        size: 'large',
+        label: 'large',
+    },
+};
+
+export const IconLeft = {
+    args: {
+        type: 'button',
+        disabled: false,
+        primary: false,
+        block: false,
+        size: 'medium',
+        icon: 'upload',
+        iconPosition: 'left',
+        label: 'IconLeft',
+    },
+};
+
+export const IconRight = {
+    args: {
+        type: 'button',
+        disabled: false,
+        primary: false,
+        block: false,
+        size: 'medium',
+        icon: 'download',
+        iconPosition: 'right',
+        label: 'IconRight',
+    },
+};
+
+export const Disabled = {
+    args: {
+        type: 'button',
+        disabled: true,
+        primary: false,
+        block: false,
+        size: 'medium',
+        label: 'Disabled',
+    },
+};
+
+
 export const Primary = {
-  args: {
-    primary: true,
-    label: 'Button',
-  },
+    args: {
+        type: 'button',
+        disabled: false,
+        primary: true,
+        block: false,
+        size: 'medium',
+        label: 'Primary',
+    },
 };
 
-export const Secondary = {
-  args: {
-    label: 'Button',
-  },
+export const PrimarySmall = {
+    args: {
+        type: 'button',
+        disabled: false,
+        primary: true,
+        block: false,
+        size: 'small',
+        label: 'PrimarySmall',
+    },
 };
 
-export const Large = {
-  args: {
-    size: 'large',
-    label: 'Button',
-  },
+export const PrimaryLarge = {
+    args: {
+        type: 'button',
+        disabled: false,
+        primary: true,
+        block: false,
+        size: 'large',
+        label: 'PrimaryLarge',
+    },
 };
 
-export const Small = {
-  args: {
-    size: 'small',
-    label: 'Button',
-  },
+
+export const PrimaryIconLeft = {
+    args: {
+        type: 'button',
+        disabled: false,
+        primary: true,
+        block: false,
+        size: 'medium',
+        icon: 'upload',
+        iconPosition: 'left',
+        label: 'PrimaryIconLeft',
+    },
+};
+
+export const PrimaryIconRight = {
+    args: {
+        type: 'button',
+        disabled: false,
+        primary: true,
+        block: false,
+        size: 'medium',
+        icon: 'download',
+        iconPosition: 'right',
+        label: 'PrimaryIconRight',
+    },
+};
+
+export const PrimaryDisabled = {
+    args: {
+        type: 'button',
+        disabled: true,
+        primary: true,
+        block: false,
+        size: 'medium',
+        label: 'PrimaryDisabled',
+    },
+};
+
+export const Block = {
+    args: {
+        type: 'button',
+        disabled: false,
+        primary: false,
+        block: true,
+        size: 'medium',
+        label: 'Block',
+    },
+};
+
+export const PrimaryBlock = {
+    args: {
+        type: 'button',
+        disabled: false,
+        primary: true,
+        block: true,
+        size: 'medium',
+        label: 'PrimaryBlock',
+    },
 };

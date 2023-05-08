@@ -1,0 +1,66 @@
+@import "common";
+
+.dropdown {
+  &-wrap {
+    position: relative;
+    width: 300px;
+  }
+
+  &-selected {
+    width: 100%;
+    display: block;
+    padding: 10px 42px 10px 10px;
+    box-sizing: border-box;
+    border: 2px solid $point1;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: bold;
+    text-align: left;
+    @include ellipsis;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background: url("../assets/icon/icon-arrow-down.svg") no-repeat center center / contain;
+      display: block;
+      width: 15px;
+      height: 15px;
+      content: '';
+    }
+  }
+
+  &-list {
+    position: absolute;
+    top: calc(100% - 4px);
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid $point1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+
+  &-item {
+    box-sizing: border-box;
+
+    &:not(:last-child) {
+      border-bottom: 2px solid $point1;
+    }
+  }
+
+  &-button {
+    text-align: left;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    @include ellipsis;
+
+    &:hover {
+      background-color: $point3;
+    }
+  }
+}

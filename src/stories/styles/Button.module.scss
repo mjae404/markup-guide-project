@@ -1,0 +1,128 @@
+@import "common";
+
+.button {
+  border-radius: 5px;
+  border: 2px solid $point1;
+  padding: 10px 20px;
+  transition: background-color .2s;
+  font-family: 'Pretendard-Regular';
+
+  &:not(:disabled) {
+    border: 2px solid $point1;
+
+    &:hover {
+      background-color: $point3;
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    border: 2px solid $gray5;
+
+    &.icon::after {
+      opacity: .2;
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px $point2;
+    outline: none;
+  }
+
+  &.primary {
+    background-color: $point1;
+
+    &:disabled {
+      background-color: #efefef;
+    }
+  }
+
+  &.block {
+    display: block;
+    width: 100%;
+  }
+
+  &.small {
+    padding: 7px 12px;
+    font-size: 14px;
+
+    &.icon {
+      &::after {
+        width: 15px;
+        height: 15px;
+      }
+
+      &.left {
+        padding-left: 30px;
+
+        &::after {
+          left: 10px;
+        }
+      }
+
+      &.right {
+        padding-right: 30px;
+
+        &::after {
+          right: 10px;
+        }
+      }
+    }
+  }
+
+  &.large {
+    padding: 15px 25px;
+    font-size: 18px;
+  }
+
+  &.icon {
+    position: relative;
+
+    &::after {
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      content: '';
+    }
+
+    &.left {
+      padding-left: 50px;
+
+      &::after {
+        left: 20px;
+      }
+    }
+
+    &.right {
+      padding-right: 50px;
+
+      &::after {
+        right: 20px;
+      }
+    }
+
+    &.write::after {
+      background: url("../assets/icon/icon-write.svg") no-repeat center center / contain;
+    }
+
+    &.upload::after {
+      background: url("../assets/icon/icon-upload.svg") no-repeat center center / contain;
+    }
+
+    &.download::after {
+      background: url("../assets/icon/icon-download.svg") no-repeat center center / contain;
+    }
+
+    &.send::after {
+      background: url("../assets/icon/icon-send.svg") no-repeat center center / contain;
+    }
+
+    &.required::after {
+      background: url("../assets/icon/icon-required.svg") no-repeat center center / contain;
+    }
+
+  }
+}
