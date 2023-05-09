@@ -16,13 +16,6 @@ import RuleCode from './pages/convention/RuleCode';
 import RuleName from './pages/convention/RuleName';
 
 import LibraryIndex from './pages/library/LibraryIndex';
-import LibraryButton from './pages/library/LibraryButton';
-import LibraryForm from './pages/library/LibraryForm';
-import LibraryList from './pages/library/LibraryList';
-import LibraryPagination from './pages/library/LibraryPagination';
-import LibraryPopup from './pages/library/LibraryPopup';
-import LibraryTab from './pages/library/LibraryTab';
-import LibraryTable from './pages/library/LibraryTable';
 
 import AccessibilityIndex from './pages/accessibility/AccessibilityIndex';
 import AccessibilityOverview from './pages/accessibility/AccessibilityOverview';
@@ -54,15 +47,8 @@ function App() {
                         <Route path="rule-code" element={<RuleCode />} />
                         <Route path="rule-name" element={<RuleName />} />
                     </Route>
-                    <Route path="library/*" element={<MarkupSideLayout menuItem={menuItems[2]} />}>
-                        <Route index element={<LibraryIndex />} />]\
-                        <Route path="button" element={<LibraryButton />} />
-                        <Route path="form" element={<LibraryForm />} />
-                        <Route path="list" element={<LibraryList />} />
-                        <Route path="pagination" element={<LibraryPagination />} />
-                        <Route path="popup" element={<LibraryPopup />} />
-                        <Route path="tab" element={<LibraryTab />} />
-                        <Route path="table" element={<LibraryTable />} />
+                    <Route path="library/*" element={<MarkupLayout />}>
+                        <Route index element={<LibraryIndex />} />
                     </Route>
                     <Route path="accessibility/*" element={<MarkupSideLayout menuItem={menuItems[3]} />}>
                         <Route index element={<AccessibilityIndex />} />

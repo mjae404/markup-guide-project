@@ -9,6 +9,7 @@ const basicMenu = {
     ]
 }    
 
+
 const conventionMenu = {
     title: '규칙 가이드',
     titleHref: '/convention',
@@ -33,35 +34,12 @@ const libraryMenu = {
     titleHref: '/library',
     children: [
         {
-            title: '버튼 (button)',
-            href: '/library/button'
-        },
-        {
-            title: '양식 (form)',
-            href: '/library/form'
-        },
-        {
-            title: '리스트 (list)',
-            href: '/library/list'
-        },
-        {
-            title: '페이지네이션 (pagination)',
-            href: '/library/pagination'
-        },
-        {
-            title: '팝업 (popup)',
-            href: '/library/popup'
-        },
-        {
-            title: '탭 (tab)',
-            href: '/library/tab'
-        },
-        {
-            title: '테이블 (table)',
-            href: '/library/table'
+            title: '라이브러리',
+            href: '/library'
         }
     ]
 }
+
 
 const accessibilityMenu = {
     title: '웹접근성',
@@ -81,6 +59,7 @@ const accessibilityMenu = {
         }
     ]
 }
+
 
 export {
     basicMenu, conventionMenu, libraryMenu, accessibilityMenu

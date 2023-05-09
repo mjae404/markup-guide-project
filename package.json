@@ -1,5 +1,5 @@
 {
-  "name": "99_markup_guide",
+  "name": "markup-guide-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -51,17 +51,17 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.0.6",
-    "@storybook/addon-interactions": "^7.0.6",
-    "@storybook/addon-links": "^7.0.6",
-    "@storybook/blocks": "^7.0.6",
-    "@storybook/preset-create-react-app": "^7.0.6",
-    "@storybook/react": "^7.0.6",
-    "@storybook/react-webpack5": "^7.0.6",
+    "@storybook/addon-essentials": "^7.0.9",
+    "@storybook/addon-interactions": "^7.0.9",
+    "@storybook/addon-links": "^7.0.9",
+    "@storybook/blocks": "^7.0.9",
+    "@storybook/preset-create-react-app": "^7.0.9",
+    "@storybook/react": "^7.0.9",
+    "@storybook/react-webpack5": "^7.0.9",
     "@storybook/testing-library": "^0.0.14-next.2",
     "babel-plugin-named-exports-order": "^0.0.2",
     "prop-types": "^15.8.1",
-    "storybook": "^7.0.6",
-    "webpack": "^5.79.0"
+    "storybook": "^7.0.9",
+    "webpack": "^5.82.0"
   }
 }

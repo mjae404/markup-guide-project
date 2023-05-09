@@ -129,14 +129,14 @@ function AccessibilityOverview() {
                         <pre>
                             <code className={`language-markup`}>
 {`<!-- X -->
-<img src="Markup.png">
-<img src="Markup.png" alt>
-<img src="Markup.png" alt="">
-<img src="Markup.png" title="MJAEDOT">
-<img src="Markup.png" alt="MJAEDOT" title="MJAEDOT">
+<img src="mjaedot.png">
+<img src="mjaedot.png" alt>
+<img src="mjaedot.png" alt="">
+<img src="mjaedot.png" title="mjaedot">
+<img src="mjaedot.png" alt="mjaedot" title="mjaedot">
 
 <!-- O -->
-<img src="Markup.png" alt="MJAEDOT">`}
+<img src="mjaedot.png" alt="mjaedot">`}
                             </code>
                         </pre>
                     </div>
@@ -145,12 +145,12 @@ function AccessibilityOverview() {
                             <code className={`language-markup`}>
 {`<!-- X -->
 <a href="/">
-    <img src="Markup.png" alt="MJAEDOT"> MJAEDOT
+    <img src="mjaedot.png" alt="mjaedot"> mjaedot
 </a>
 
 <!-- O -->
 <a href="/">
-    <img src="Markup.png" alt> MJAEDOT
+    <img src="mjaedot.png" alt> mjaedot
 </a>`}
                             </code>
                         </pre>
@@ -250,14 +250,14 @@ $(document).on("mouseover focus", ".gnb a", function() { ... });`}
                             <code className={`language-markup`}>
 {`/* X */
 <body>
-    <h1>MJAEDOT</h1>
+    <h1>mjaedot</h1>
     <nav>...</nav>
     <main>...</main>
 
 <!-- O -->
 <body>
     <a href="#main">본문으로 건너뛰기</a>
-    <h1>MJAEDOT</h1>
+    <h1>mjaedot</h1>
     <nav>...</nav>
     <main id="main">...</main>`}
                             </code>
@@ -274,12 +274,12 @@ $(document).on("mouseover focus", ".gnb a", function() { ... });`}
                             <code className={`language-markup`}>
 {`<!-- X -->
 <head>
-    <title>MJAEDOT</title>
+    <title>mjaedot</title>
 </head>
 
 <!-- O -->
 <head>
-    <title>웹퍼블리싱 가이드 - MJAEDOT</title>
+    <title>웹퍼블리싱 가이드 - mjaedot</title>
 </head>`}
                             </code>
                         </pre>

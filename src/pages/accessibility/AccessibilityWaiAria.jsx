@@ -840,7 +840,7 @@ function AccessibilityWaiAria() {
                                 </td>
                                 <td>
                                     <div className="mu-table-cell">
-                                        영역 내의 내용 스크롤을 제어하는 그래픽 객체입니다.
+                                        영역 내의 내용 스크롤을 제어하는 ​​그래픽 객체입니다.
                                     </div>
                                 </td>
                             </tr>
@@ -984,7 +984,7 @@ function AccessibilityWaiAria() {
                                 </td>
                                 <td>
                                     <div className="mu-table-cell">
-                                        스크롤을 통해 기사의 목록에 추가되거나 제거될 수있는 기사의 스크롤 가능한 목록
+                                        스크롤을 통해 기사의 목록에 추가되거나 제거 될 수있는 기사의 스크롤 가능한 목록
                                     </div>
                                 </td>
                             </tr>
@@ -997,8 +997,8 @@ function AccessibilityWaiAria() {
                                 </td>
                                 <td>
                                     <div className="mu-table-cell">
-                                        보조 기술 사용자가 읽기 모드로 탐색 할 수 있는 콘텐츠가 포함 된 요소입니다.
-                                    </div>∂
+                                        보조 기술 사용자가 읽기 모드로 탐색 할 수있는 콘텐츠가 포함 된 요소입니다.
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -1221,7 +1221,7 @@ function AccessibilityWaiAria() {
                                 </td>
                                 <td>
                                     <div className="mu-table-cell">
-                                        <code className="mu-code-label">"idname"</code> : 참조할 요소의 ID 값을 입력합니다.
+                                        <code className="mu-code-label">"idname"</code>  : 참조할 요소의 ID 값을 입력합니다.
                                     </div>
                                 </td>
                             </tr>
@@ -1234,7 +1234,7 @@ function AccessibilityWaiAria() {
                                 </td>
                                 <td>
                                     <div className="mu-table-cell">
-                                        <code className="mu-code-label">"idname"</code> : 참조할 요소의 ID 값을 입력합니다.
+                                        <code className="mu-code-label">"idname"</code>  : 참조할 요소의 ID 값을 입력합니다.
                                     </div>
                                 </td>
                             </tr>
@@ -1247,7 +1247,7 @@ function AccessibilityWaiAria() {
                                 </td>
                                 <td>
                                     <div className="mu-table-cell">
-                                        <code className="mu-code-label">"idname"</code> : 다중 참조할 요소의 ID 값을 읽어줄 순서대로 입력합니다.
+                                        <code className="mu-code-label">"idname"</code>  : 다중 참조할 요소의 ID 값을 읽어줄 순서대로 입력합니다.
                                     </div>
                                 </td>
                             </tr>
@@ -1260,7 +1260,7 @@ function AccessibilityWaiAria() {
                                 </td>
                                 <td>
                                     <div className="mu-table-cell">
-                                        <code className="mu-code-label">"idname"</code> : 참조할 요소의 ID 값을 입력합니다.
+                                        <code className="mu-code-label">"idname"</code>  : 참조할 요소의 ID 값을 입력합니다.
                                     </div>
                                 </td>
                             </tr>
@@ -1339,7 +1339,7 @@ function AccessibilityWaiAria() {
                                 </td>
                                 <td>
                                     <div className="mu-table-cell">
-                                        <code className="mu-code-label">"idname"</code> : 참조할 요소의 ID 값을 입력합니다. <br aria-hidden="true" />
+                                        <code className="mu-code-label">"idname"</code>  : 참조할 요소의 ID 값을 입력합니다. <br aria-hidden="true" />
                                         <code className="mu-code-label">""polite"</code> : 현재 작업을 방해하지 않을 때만 사용자에게 업데이트를 알립니다. <br aria-hidden="true" />
                                         <code className="mu-code-label">""off"</code> : 현재 해당 지역에 집중되어 있을 때만 사용자에게 업데이트를 알립니다. <br aria-hidden="true" />
                                         <code className="mu-code-label">""assertive"</code> : 업데이트 즉시 사용자에게 알립니다.
@@ -1405,7 +1405,7 @@ function AccessibilityWaiAria() {
                                 </td>
                                 <td>
                                     <div className="mu-table-cell">
-                                        <code className="mu-code-label">"idname"</code> : 참조할 요소의 ID 값을 입력합니다.
+                                        <code className="mu-code-label">"idname"</code>  : 참조할 요소의 ID 값을 입력합니다.
                                     </div>
                                 </td>
                             </tr>
@@ -1591,7 +1591,7 @@ function AccessibilityWaiAria() {
                                 </td>
                                 <td>
                                     <div className="mu-table-cell">
-                                        <code className="mu-code-label">"Sunday"</code> : aria-valuenow를 읽을 수 있는 텍스트 대안을 정의합니다.
+                                        <code className="mu-code-label">"Sunday"</code> :  <code className="mu-code-label">ria-valuenow</code>를 읽을 수 있는 텍스트 대안을 정의합니다.
                                     </div>
                                 </td>
                             </tr>
@@ -1747,7 +1747,7 @@ function AccessibilityWaiAria() {
                                 </td>
                                 <td>
                                     <div className="mu-table-cell">
-                                        <code className="mu-code-label">"idname"</code> : 다중 참조할 요소의 ID 값을 읽어줄 순서대로 입력합니다.
+                                        <code className="mu-code-label">"idname"</code>  : 다중 참조할 요소의 ID 값을 읽어줄 순서대로 입력합니다.
                                     </div>
                                 </td>
                             </tr>
@@ -1760,7 +1760,7 @@ function AccessibilityWaiAria() {
                                 </td>
                                 <td>
                                     <div className="mu-table-cell">
-                                        <code className="mu-code-label">"idname"</code> : 참조할 요소의 ID 값을 입력합니다.
+                                        <code className="mu-code-label">"idname"</code>  : 참조할 요소의 ID 값을 입력합니다.
                                     </div>
                                 </td>
                             </tr>
@@ -1800,8 +1800,8 @@ function AccessibilityWaiAria() {
                                 </td>
                                 <td>
                                     <div className="mu-table-cell">
-                                    현재 <code className="mu-code-label">listitems</code> 또는 <code className="mu-code-label">treeitem</code>의 집합에서 요소의 번호 또는 위치를 정의 <br aria-hidden="true" />
-                                    <code className="mu-code-label">"5"</code> : 순서에 맞는 값을 입력합니다. (순서 목록은 <code className="mu-code-label">ol li</code> 구조로 사용)
+                                        현재 <code className="mu-code-label">listitems</code> 또는 <code className="mu-code-label">treeitem</code>의 집합에서 요소의 번호 또는 위치를 정의 <br aria-hidden="true" />
+                                        <code className="mu-code-label">"5"</code> : 순서에 맞는 값을 입력합니다. (순서 목록은 ol li 구조로 사용)
                                     </div>
                                 </td>
                             </tr>
@@ -1892,7 +1892,7 @@ function AccessibilityWaiAria() {
                                 </td>
                                 <td>
                                     <div className="mu-table-cell">
-                                        <code className="mu-code-label">role="checkbox"</code>, <code className="mu-code-label">role="radio"</code>ß를 사용한 경우에 쓰여짐
+                                        <code className="mu-code-label">role="checkbox"</code>, <code className="mu-code-label">role="radio"</code> 를 사용한 경우에 쓰여짐
                                     </div>
                                 </td>
                             </tr>
@@ -1924,7 +1924,7 @@ function AccessibilityWaiAria() {
                                 </td>
                                 <td>
                                     <div className="mu-table-cell">
-                                        <code className="mu-code-label">"true"</code> 포커스 가능하나 변경불가상태 <code className="mu-code-label">"false"</code>ß 요소의 사용 가능
+                                        <code className="mu-code-label">"true"</code> 포커스 가능하나 변경불가상태 <code className="mu-code-label">"false"</code> 요소의 사용 가능
                                     </div>
                                 </td>
                             </tr>
@@ -1968,7 +1968,7 @@ function AccessibilityWaiAria() {
                                     <div className="mu-table-cell">
                                         <code className="mu-code-label">"false"</code> : 요소가 눌려지지만 현재 눌려지지 않습니다. <br aria-hidden="true" />
                                         <code className="mu-code-label">"mixed"</code> : 혼합모드 값을 나타냅니다. <br aria-hidden="true" />
-                                        <code className="mu-code-label">"true"</code> : 눌립니다. <br aria-hidden="true" />
+                                        <code className="mu-code-label">"true"</code> : 눌릷니다. <br aria-hidden="true" />
                                         <code className="mu-code-label">"undefined"</code> : 눌려지지 않습니다.
                                     </div>
                                 </td>

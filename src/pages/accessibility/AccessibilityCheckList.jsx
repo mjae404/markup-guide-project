@@ -73,7 +73,7 @@ function AccessibilityCheckList() {
                             <td>
                                 <div className="mu-table-cell">
                                     링크로 사용된 텍스트가 주변의 맥락과 관계없이 용도나 목적을 이해할 수 있는가? <br aria-hidden="true" />
-                                    예&#41; 이동하려면 여기를 클릭하시오. ( X )
+                                    예&#41;  이동하려면 여기를 클릭하시오. ( X )
                                 </div>
                             </td>
                         </tr>
@@ -181,7 +181,7 @@ function AccessibilityCheckList() {
                             <th>일반 입력폼</th>
                             <td>
                                 <div className="mu-table-cell">
-                                    대응하는 라벨 텍스트가 없는 입력폼의 경우 안내할 문구를 정의하였는가? (title 속성으로 제공됨)
+                                    대응하는 라벨 텍스트가 없는 입력폼의 경우 안내할 문구를 정의하였는가? (<code className="mu-code-label">title</code> 속성으로 제공됨)
                                 </div>
                             </td>
                         </tr>
@@ -299,7 +299,7 @@ function AccessibilityCheckList() {
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        팝업이 열리는 기능의 링크 또는 버튼에 마우스오버 했을 때 새 창이 열림을 안내하는 툴팁(tooltip=말풍선)이 나오는가?
+                                        팝업이 열리는 기능의 링크 또는 버튼에 마우스오버 했을 때 새 창이 열림을 안내하는 툴팁(<code className="mu-code-label">tooltip</code>=말풍선)이 나오는가?
                                     </div>
                                 </td>
                             </tr>
@@ -315,7 +315,7 @@ function AccessibilityCheckList() {
                                 <th>라벨 텍스트가 없는 입력폼</th>
                                 <td>
                                     <div className="mu-table-cell">
-                                        입력폼에 마우스오버 했을 때 해당 입력폼을 설명해주는 툴팁(tooltip=말풍선)이 나오는가? (title 속성)
+                                        입력폼에 마우스오버 했을 때 해당 입력폼을 설명해주는 툴팁(<code className="mu-code-label">tooltip</code>=말풍선)이 나오는가? (<code className="mu-code-label">title</code> 속성)
                                     </div>
                                 </td>
                             </tr>
@@ -342,7 +342,7 @@ function AccessibilityCheckList() {
                                 <th>HTML 텍스트</th>
                                 <td>
                                     <div className="mu-table-cell">
-                                        관리도구에 html 코드 입력시 태그의 열고 닫음을 정확히 하여 입력하였는가?
+                                        관리도구에 <code className="mu-code-label">html</code> 코드 입력시 태그의 열고 닫음을 정확히 하여 입력하였는가?
                                     </div>
                                 </td>
                             </tr>
@@ -372,7 +372,7 @@ function AccessibilityCheckList() {
                                 <th>HTML 텍스트</th>
                                 <td>
                                     <div className="mu-table-cell">
-                                        관리도구에 html 코드 입력시 태그의 열고 닫음을 정확히 하여 입력하였는가?
+                                        관리도구에 <code className="mu-code-label">html</code> 코드 입력시 태그의 열고 닫음을 정확히 하여 입력하였는가?
                                     </div>
                                 </td>
                             </tr>
@@ -443,7 +443,7 @@ function AccessibilityCheckList() {
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        약어, 숫자, 기호 등 텍스트만으로는 의미파악이 어려운 경우 이해를 도울 수 있는 title 값을 제공하는가?
+                                        약어, 숫자, 기호 등 텍스트만으로는 의미파악이 어려운 경우 이해를 도울 수 있는 <code className="mu-code-label">title</code> 값을 제공하는가?
                                     </div>
                                 </td>
                             </tr>
@@ -479,7 +479,7 @@ function AccessibilityCheckList() {
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        내부에 스크롤바가 있는 내용에 키보드로 초점을 이동할 수 있고 위,아래 방향키로 내용을 확인할 수 있는가? (tabindex="0" 속성을 지정하거나 textarea 태그를 사용)
+                                        내부에 스크롤바가 있는 내용에 키보드로 초점을 이동할 수 있고 위,아래 방향키로 내용을 확인할 수 있는가? (<code className="mu-code-label">tabindex="0"</code> 속성을 지정하거나 <code className="mu-code-label">textarea</code> 태그를 사용)
                                     </div>
                                 </td>
                             </tr>
@@ -501,7 +501,7 @@ function AccessibilityCheckList() {
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                    링크나 버튼에 충분한 크기의 클릭 영역을 제공하는가? (최소 10 x 10 px)
+                                        링크나 버튼에 충분한 크기의 클릭 영역을 제공하는가? (최소 10 x 10 px)
                                     </div>
                                 </td>
                             </tr>
@@ -522,14 +522,14 @@ function AccessibilityCheckList() {
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        주요 내용의 제목을 h1~h6으로 마크업 하였는가?
+                                        주요 내용의 제목을 <code className="mu-code-label">h1</code>~<code className="mu-code-label">h6</code>으로 마크업 하였는가?
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        내용을 불러오는 iframe에 해당 내용을 의미하는 title 값을 지정하였는가?
+                                        내용을 불러오는 <code className="mu-code-label">iframe</code>에 해당 내용을 의미하는 <code className="mu-code-label">title</code> 값을 지정하였는가?
                                     </div>
                                 </td>
                             </tr>
@@ -537,35 +537,28 @@ function AccessibilityCheckList() {
                                 <th rowSpan="12">이해의 용이성</th>
                                 <td>
                                     <div className="mu-table-cell">
-                                        링크가 스크립트를 통해 새창 또는 팝업창으로 열리는 경우 title="새창으로 열림" 값을 제공하는가? (target="_blank" 를 제공하는 경우 생략 가능)
+                                        링크가 스크립트를 통해 새창 또는 팝업창으로 열리는 경우 <code className="mu-code-label">title="새창으로 열림"</code> 값을 제공하는가? (<code className="mu-code-label">target="_blank"</code> 를 제공하는 경우 생략 가능)
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        table에 caption 으로 제목을 제공하고 있는가? (table 앞에 명확한 제목요소가 있는 경우는 caption 생략 가능)
+                                    <code className="mu-code-label">table</code>에 <code className="mu-code-label">caption</code> 으로 제목을 제공하고 있는가? (<code className="mu-code-label">table</code> 앞에 명확한 제목요소가 있는 경우는 <code className="mu-code-label">caption</code> 생략 가능)
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        table에 summary 속성으로 표의 전체적인 내용을 파악할 수 있는 요약을 제공하는가?
+                                        가로헤더, 세로헤더가 있는 2차원 표에 <code className="mu-code-label">th</code>에 <code className="mu-code-label">scope</code> 값을 제공하는가?
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        가로헤더, 세로헤더가 있는 2차원 표에 th에 scope 값을 제공하는가?
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div className="mu-table-cell">
-                                        제목셀이 병합된 경우 scope="colgroup" 값을 제공하는가?
+                                        제목셀이 병합된 경우 <code className="mu-code-label">scope="colgroup"</code> 값을 제공하는가?
                                     </div>
                                 </td>
                             </tr>
@@ -621,7 +614,7 @@ function AccessibilityCheckList() {
                                 <th>링크</th>
                                 <td>
                                     <div className="mu-table-cell">
-                                        링크의 점선을 없애기 위해 onfocus="this.blur()" 등의 스크립트를 사용하지는 않았는가?
+                                        링크의 점선을 없애기 위해 <code className="mu-code-label">onfocus="this.blur()"</code> 등의 스크립트를 사용하지는 않았는가?
                                     </div>
                                 </td>
                             </tr>
@@ -656,7 +649,7 @@ function AccessibilityCheckList() {
                                 <th>이미지</th>
                                 <td>
                                     <div className="mu-table-cell">
-                                        책표지 이미지, 배너 이미지 등 관리도구로 입력되는 alt 값이 정상적으로 지정되었는가?
+                                        책표지 이미지, 배너 이미지 등 관리도구로 입력되는 <code className="mu-code-label">alt</code> 값이 정상적으로 지정되었는가?
                                     </div>
                                 </td>
                             </tr>
@@ -664,7 +657,7 @@ function AccessibilityCheckList() {
                                 <th>라벨 텍스트가 있는 입력폼</th>
                                 <td>
                                     <div className="mu-table-cell">
-                                        id와 for 값의 연결이 끊기지 않았는가? 입력폼과 대응하는 라벨 텍스트를 클릭했을때 해당 입력폼에 초점이 이동하는가?
+                                        <code className="mu-code-label">id</code>와 <code className="mu-code-label">for</code> 값의 연결이 끊기지 않았는가? 입력폼과 대응하는 라벨 텍스트를 클릭했을때 해당 입력폼에 초점이 이동하는가?
                                     </div>
                                 </td>
                             </tr>
@@ -686,21 +679,21 @@ function AccessibilityCheckList() {
                                 <th rowSpan="3">인식의 용의성</th>
                                 <td>
                                     <div className="mu-table-cell">
-                                        책표지 이미지, 배너 이미지 등 관리도구로 입력되는 alt 값이 정상적으로 지정되었는가?
+                                        책표지 이미지, 배너 이미지 등 관리도구로 입력되는 <code className="mu-code-label">alt</code> 값이 정상적으로 지정되었는가?
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        게시물에 대한 링크로 썸네일을 제공하는 경우 이미지의 alt값으로 게시물의 제목을 제공하는가?
+                                        게시물에 대한 링크로 썸네일을 제공하는 경우 이미지의 <code className="mu-code-label">alt</code> 값으로 게시물의 제목을 제공하는가?
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        관리도구나 에디터로 삽입되는 이미지의 경우 사용자(관리자)가 alt 값을 입력할 수 있는 기능을 제공하는가?
+                                        관리도구나 에디터로 삽입되는 이미지의 경우 사용자(관리자)가 <code className="mu-code-label">alt</code> 값을 입력할 수 있는 기능을 제공하는가?
                                     </div>
                                 </td>
                             </tr>
@@ -715,14 +708,14 @@ function AccessibilityCheckList() {
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        포커스의 순서를 임의로 조작하는 tabindex 속성을 사용하고 있지 않은가?
+                                        포커스의 순서를 임의로 조작하는 <code className="mu-code-label">tabindex</code> 속성을 사용하고 있지 않은가?
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        링크 요소에 포커스가 갈 경우 생기는 점선 테두리를 없애기 위해 onclick="this.blur();" 를 사용하고 있지 않은가?
+                                        링크 요소에 포커스가 갈 경우 생기는 점선 테두리를 없애기 위해 <code className="mu-code-label">onclick="this.blur();"</code> 를 사용하고 있지 않은가?
                                     </div>
                                 </td>
                             </tr>
@@ -737,28 +730,28 @@ function AccessibilityCheckList() {
                                 <th rowSpan="13">이해의 용이성</th>
                                 <td>
                                     <div className="mu-table-cell">
-                                        링크가 스크립트를 통해 새창 또는 팝업창으로 열리는 경우 title="새창으로 열림" 값을 제공하는가?
+                                        링크가 스크립트를 통해 새창 또는 팝업창으로 열리는 경우 <code className="mu-code-label">title="새창으로 열림"</code> 값을 제공하는가?
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        각 페이지 고유의 제목이 브라우저 제목(title)으로 되어 있는가?
+                                        각 페이지 고유의 제목이 브라우저 제목(<code className="mu-code-label">title</code>)으로 되어 있는가?
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        내용을 불러오는 iframe에 해당 내용을 의미하는 title 값을 지정하였는가?
+                                        내용을 불러오는 <code className="mu-code-label">iframe</code>에 해당 내용을 의미하는 <code className="mu-code-label">title</code> 값을 지정하였는가?
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        내용이 없는 프로그램 용도의 iframe에 title="빈 프레임" 값을 지정하였는가?
+                                        내용이 없는 프로그램 용도의 <code className="mu-code-label">iframe</code>에 <code className="mu-code-label">title="빈 프레임"</code> 값을 지정하였는가?
                                     </div>
                                 </td>
                             </tr>
@@ -772,28 +765,28 @@ function AccessibilityCheckList() {
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        입력요소에 대응하는 텍스트가 있는 경우 해당 텍스트가 label 로 마크업 되어있는가?
+                                        입력요소에 대응하는 텍스트가 있는 경우 해당 텍스트가 <code className="mu-code-label">label</code>로 마크업 되어있는가?
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        입력요소와 이에 대응하는 label 이 동일한 id를 사용하여 정상적으로 연결이 되어 있는가?
+                                        입력요소와 이에 대응하는 <code className="mu-code-label">label</code>이 동일한 <code className="mu-code-label">id</code>를 사용하여 정상적으로 연결이 되어 있는가?
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        입력요소의 id 값을 변경한 경우 연결된 label 의 for 값을 같이 변경하였는가?
+                                        입력요소의 id 값을 변경한 경우 연결된 <code className="mu-code-label">label</code> 의 <code className="mu-code-label">for</code> 값을 같이 변경하였는가?
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div className="mu-table-cell">
-                                        입력요소에 대응하는 텍스트가 없는 경우 title 속성으로 해당 입력요소의 기능을 안내하고 있는가?
+                                        입력요소에 대응하는 텍스트가 없는 경우 <code className="mu-code-label">title</code> 속성으로 해당 입력요소의 기능을 안내하고 있는가?
                                     </div>
                                 </td>
                             </tr>
@@ -829,7 +822,7 @@ function AccessibilityCheckList() {
                                 <th>견고성</th>
                                 <td>
                                     <div className="mu-table-cell">
-                                        HTML 문법에 오류가 없는가? (태그의 열고 닫음, 태그의 중첩, 중복 선언된 속성, 특정 태그에 넣을 수 없는 태그)
+                                        <code className="mu-code-label">HTML</code> 문법에 오류가 없는가? (태그의 열고 닫음, 태그의 중첩, 중복 선언된 속성, 특정 태그에 넣을 수 없는 태그)
                                     </div>
                                 </td>
                             </tr>

@@ -114,6 +114,15 @@
   }
 }
 
+.mu-iframe {
+  position: fixed;
+  top: 92px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 154px);
+  border: none;
+}
+
 .mu-example {
   padding: 1em;
   font-family: "Source Code Pro", "Noto Sans KR", monospace;
