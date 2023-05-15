@@ -7,8 +7,12 @@ export const Checkbox = ({ id, label, reverse, size, disabled, ...props }) => {
         <div
             className={`${styles['checkbox-wrap']} ${reverse ? styles.reverse : ''}  ${size ? styles[size] : ''}`}
         >
-            <input type="checkbox" className={`${styles['blind']} ${styles['checkbox-input']}`} id={id} disabled={disabled} />
-            <div className={styles['checkbox']}></div>
+            <input
+                type="checkbox"
+                className={`${styles['blind']} ${styles['checkbox-input']}`}
+                id={id}
+                disabled={disabled}
+            />
             <label className={styles['checkbox-label']} htmlFor={id}>
                 {label}
             </label>

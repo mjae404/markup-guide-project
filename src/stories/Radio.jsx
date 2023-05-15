@@ -7,8 +7,12 @@ export const Radio = ({ id, label, reverse, size, disabled, ...props }) => {
         <div
             className={`${styles['radio-wrap']} ${reverse ? styles.reverse : ''}  ${size ? styles[size] : ''}`}
         >
-            <input type="radio" className={`${styles['blind']} ${styles['radio-input']}`} id={id} disabled={disabled} />
-            <div className={styles['radio']}></div>
+            <input
+                type="radio"
+                className={`${styles['blind']} ${styles['radio-input']}`}
+                id={id}
+                disabled={disabled}
+            />
             <label className={styles['radio-label']} htmlFor={id}>
                 {label}
             </label>

@@ -1,99 +1,210 @@
 @import "common";
 
 .radio {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-top: 2px;
-  border: 2px solid $point1;
-  border-radius: 50%;
-  vertical-align: middle;
+  &-wrap {
+    &:not(.reverse) {
+      input[type="radio"] {
+        &:active ~ .radio-label::before {
+          outline: none;
+          border: 2px solid $point1;
+          box-shadow: 0 0 0 2px $point2;
+        }
 
-  @at-root .small & {
-    width: 12px;
-    height: 12px;
-  }
+        &:focus ~ .radio-label::before {
+          border: 2px solid $point1;
+          box-shadow: 0 0 0 2px $point2;
+          outline: none;
+        }
 
-  @at-root .large & {
-    width: 20px;
-    height: 20px;
-  }
+        &:checked ~ .radio-label {
+          &::before {
+            border-color: $point1;
+            background-color: $point1;
+            position: relative;
+          }
 
-  @at-root input[type="radio"]:active ~ & {
-    outline: none;
-    border: 2px solid $point1;
-    box-shadow: 0 0 0 2px $point2;
-  }
+          &::after {
+            position: absolute;
+            left: 6px;
+            top: 6px;
+            width: 6px;
+            height: 10px;
+            margin-top: -2px;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transform: rotate(45deg);
+            z-index: 1;
+            content: '';
+          }
+        }
 
-  @at-root input[type="radio"]:focus ~ & {
-    border: 2px solid $point1;
-    box-shadow: 0 0 0 2px $point2;
-    outline: none;
-  }
+        &:disabled ~ .radio-label::before {
+          background-color: $gray6;
+          border-color: $gray5;
+          cursor: not-allowed;
+        }
 
-  @at-root input[type="radio"]:checked ~ & {
-    border-color: $point1;
-    background-color: $point1;
-    position: relative;
+        &:disabled:active ~ .radio-label::before {
+          box-shadow: none;
+        }
 
-    &::after {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 6px;
-      height: 10px;
-      margin-top: -2px;
-      border-right: 2px solid #fff;
-      border-bottom: 2px solid #fff;
-      transform: translate(-50%, -50%) rotate(45deg);
-      content: '';
-
-      @at-root .small & {
-        margin-top: -1px;
-        width: 3px;
-        height: 6px;
+        &:disabled:focus ~ .radio-label::before {
+          box-shadow: none;
+        }
       }
 
-      @at-root .large & {
-        margin-top: -2px;
-        width: 8px;
-        height: 12px;
+      &.small {
+        .radio-label::before {
+          width: 12px;
+          height: 12px;
+        }
+
+        input[type="radio"]:checked ~ .radio-label::after {
+          left: 5px;
+          top: 6px;
+          width: 4px;
+          height: 8px;
+        }
+      }
+
+      &.large {
+        .radio-label::before {
+          width: 24px;
+          height: 24px;
+        }
+
+        input[type="radio"]:checked ~ .radio-label::after {
+          left: 8px;
+          top: 6px;
+          width: 8px;
+          height: 15px;
+          border-width: 3px;
+        }
+      }
+
+      .radio-label {
+        &::before {
+          display: inline-block;
+          vertical-align: top;
+          width: 16px;
+          height: 16px;
+          border: 2px solid $point1;
+          border-radius: 50%;
+          margin: 2px 7px 0 0;
+          content: '';
+        }
       }
     }
-  }
-
-  @at-root input[type="radio"]:disabled ~ & {
-    background-color: $gray6;
-    border-color: $gray5;
-    cursor: not-allowed;
-  }
-
-  @at-root input[type="radio"]:disabled:active ~ & {
-    box-shadow: none;
-  }
-
-  @at-root input[type="radio"]:disabled:focus ~ & {
-    box-shadow: none;
-  }
-
-  &-wrap {
-    display: inline-flex;
-    align-items: center;
 
     &.reverse {
-      flex-direction: row-reverse;
-    }
+      input[type="radio"] {
+        &:active ~ .radio-label::after {
+          outline: none;
+          border: 2px solid $point1;
+          box-shadow: 0 0 0 2px $point2;
+        }
 
-    &:hover .radio {
-      background-color: $point3;
+        &:focus ~ .radio-label::after {
+          border: 2px solid $point1;
+          box-shadow: 0 0 0 2px $point2;
+          outline: none;
+        }
+
+        &:checked ~ .radio-label {
+          &::before {
+            position: absolute;
+            right: 6px;
+            top: 6px;
+            width: 6px;
+            height: 10px;
+            margin-top: -2px;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transform: rotate(45deg);
+            z-index: 1;
+            content: '';
+          }
+
+          &::after {
+            border-color: $point1;
+            background-color: $point1;
+            position: relative;
+          }
+        }
+
+        &:disabled ~ .radio-label::after {
+          background-color: $gray6;
+          border-color: $gray5;
+          cursor: not-allowed;
+        }
+        &:disabled:active ~ .radio-label::after {
+          box-shadow: none;
+        }
+        &:disabled:focus ~ .radio-label::after {
+          box-shadow: none;
+        }
+      }
+
+      .radio-label {
+        &::after {
+          display: inline-block;
+          vertical-align: top;
+          width: 16px;
+          height: 16px;
+          border: 2px solid $point1;
+          border-radius: 50%;
+          margin: 2px 0 0 7px;
+          content: '';
+
+          @at-root .small & {
+            width: 12px;
+            height: 12px;
+          }
+
+          @at-root .large & {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      &.small {
+        .radio-label::after {
+          width: 12px;
+          height: 12px;
+        }
+
+        input[type="radio"]:checked ~ .radio-label::before {
+          right: 5px;
+          top: 6px;
+          width: 4px;
+          height: 8px;
+        }
+      }
+
+      &.large {
+        .radio-label::after {
+          width: 24px;
+          height: 24px;
+        }
+
+        input[type="radio"]:checked ~ .radio-label::before {
+          right: 8px;
+          top: 6px;
+          width: 8px;
+          height: 15px;
+          border-width: 3px;
+        }
+      }
     }
   }
 
   &-label {
-    flex: 1;
-    margin-left: 7px;
     line-height: 1.5;
     font-family: 'Pretendard-Regular';
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
 
     @at-root .small & {
       font-size: 14px;
@@ -106,11 +217,6 @@
     @at-root input[type="radio"]:disabled ~ & {
       cursor: not-allowed;
       color: $gray5;
-    }
-
-    @at-root .reverse & {
-      text-align: right;
-      margin: 0 7px 0 0;
     }
   }
 }
